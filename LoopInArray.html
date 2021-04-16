@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loop In Array
+    </title>
+</head>
+<body>
+    
+    <script>
+        /* var num = [10, 20, 30, 40, 50];
+        var sum = 0;
+        for (i=0; i<5; i++){
+            sum = sum + num[i];
+        }
+        console.log(sum); */
+
+        var num = new Array();
+        var sum = 0;
+
+        for(var i = 0; i<5; i++){
+            num[i] = parseInt(prompt("Enter number: "));
+            sum = sum + num[i];
+        }
+        console.log(sum);
+
+    </script>
+</body>
+</html>
