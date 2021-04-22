@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrow Function</title>
+</head>
+<body>
+    <script>
+        /* var message1 = () => console.log("Message 1");
+        message1();
+
+        const message2 = () => {
+            return "Message 2";
+        }
+        console.log(message2());
+
+        const message3 = () => "Message 3";
+        console.log(message3()); 
+
+        const add = (num1, num2) => num1 + num2;
+        console.log(add(10,20)); */
+
+        var students = [
+            {
+                ID: 101,
+                Name: "Arman",
+                Score: 2.44 
+            },
+            {
+                ID: 102,
+                Name: "Reyad",
+                Score: 4.35 
+            },
+            {
+                ID: 103,
+                Name: "Niga",
+                Score: 4.00 
+            },
+            {
+                ID: 104,
+                Name: "Jamil",
+                Score: 2.35 
+            },
+            {
+                ID: 105,
+                Name: "Rony",
+                Score: 3.00 
+            }
+        ];
+
+        const studentsName1 = () => students.filter((x) => x.Score > 3).map((y) => y.Name); 
+
+        console.log(studentsName1());
+    </script>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Array Method</title>
+  </head>
+  <body>
+    <script>
+      let numbers = [3, 7, 5, 6, 9, 10, 44, 33];
+
+      /* //find(callback, value) return the value of the first element that pass certain condition.
+
+        firstEventNumber = numbers.find(x => x%2==0);
+        console.log(firstEventNumber); 
+
+        const eventNumber = (value, index, arr) => {
+            if(value%2==0)
+            return value;
+        }
+        let firstEventNumber = numbers.find(eventNumber);
+        console.log(firstEventNumber);
+
+        //Find Index
+        let firstEventIndex = numbers.findIndex(eventNumber);
+        console.log(firstEventIndex); */
+
+      const students = [
+        {
+          id: 101,
+          name: "Arman",
+          gpa: 2.44,
+        },
+        {
+          id: 102,
+          name: "Kader",
+          gpa: 4.34,
+        },
+        {
+          id: 103,
+          name: "Niga",
+          gpa: 3.44,
+        }
+      ];
+
+      console.log(students.find(x => x.gpa>4));
+
+
+    </script>
+  </body>
+</html>

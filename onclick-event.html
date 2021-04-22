@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Onclick Event</title>
+  </head>
+  <body>
+    <button onclick="picture1()">Chess</button>
+    <button onclick="picture2()">JS</button>
+    <p></p>
+    <img id="image" src="#" alt="" height="300" width="300">
+
+
+    <script>
+      var myVar = document.querySelector("#image");
+      function picture1() {
+        myVar.src = "images/chess.jpg";
+      }
+      function picture2() {
+        myVar.src = "images/js.png";
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For Each Loop</title>
+</head>
+<body>
+    
+    <script>
+        /* var numbers = [10,30,50,80,20];
+        numbers.forEach(function(x){
+            console.log(x);
+        }); */
+
+        /* var num = [1, 2, 3, 4, 5];
+
+        var squareNum = [];
+
+        num.forEach(function(x){
+            squareNum.push(x*x);
+            
+        });
+        console.log(squareNum); */
+
+        var newArray = [10,20,30,40,50];
+        console.log(newArray);
+
+        newArray.forEach(function(x, index, arr){
+            arr[index] = x + 5;
+        })
+        console.log(newArray);
+
+    </script>
+</body>
+</html>

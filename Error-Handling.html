@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Error Handling</title>
+</head>
+<body>
+    <p>Enter a number between 5 to 10: </p>
+    <input type="text" id="input1">
+    <button id="check">Check</button>
+
+    <script>
+        /* try{
+            alert("Hi Everyone!");
+            alert(c);
+        }catch(err){
+            console.log(err);
+        }finally{
+            alert("Bye Everyone!");
+        } */
+
+        document.querySelector("#check").addEventListener("click", function(){
+            var num = document.querySelector("#input1").value;
+            console.log(num);
+
+            try{
+                if(num < 5){
+                    throw "Input is too low"
+                }else if(num > 10){
+                    throw "Input is too high"
+                }
+
+            }catch(err){
+                console.log(err);
+            }
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Map - Filter</title>
+</head>
+<body>
+    
+    <script>
+        var numbers = [4, 5, 6, 10,20,30,40,50];
+        var squareNumbers = numbers.map(function(x){
+            return x*x;
+        });
+        console.log(squareNumbers);
+
+        var filterNumbers = numbers.filter(function(x){
+            return x>10;
+        });
+        console.log(filterNumbers);
+    </script>
+</body>
+</html>

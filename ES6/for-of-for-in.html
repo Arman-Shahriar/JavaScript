@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For of & For in</title>
+</head>
+<body>
+    <script>
+        //For of
+        const names = ["Arman", "Reyad", "Jamil"];
+        for(let name of names){
+            console.log(name)
+        }
+
+        //For in
+        let student1 = {
+            ID: 17170914,
+            Name: "Arman Shahriar",
+            Cgpa: 4.44
+        }
+        for(let x in student1){
+            console.log(`${x} : ${student1[x]}`);
+        }
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object Literals</title>
+</head>
+<body>
+    <script>
+        //Duplication Elimination
+        /* function student1(name, age){
+            return{
+                name,
+                age
+            }
+        }
+        console.log(student1("Arman Shahriar", 23)); */
+
+        //Concise Method
+        let message = {
+            'body name'(){
+                return `This is object function.`
+            }
+        }
+
+        console.log(message['body name']());
+
+
+    </script>
+</body>
+</html>

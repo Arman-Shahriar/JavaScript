@@ -9,7 +9,53 @@
 <body>
     
     <script>
+
+        /* var student1 = {
+            name: "Arman Shahriar",
+            age: 23,
+            cgpa: 4.44,
+            lang: ["Bengali", "English", "Chinese"]
+        }
+        var student2 = {
+            name: "Abdul Kader",
+            age: 22,
+            cgpa: 4.35,
+            lang: ["Bengali", "English", "Spanish"]
+        }
+        var student3 = {
+            name: "Abu Bokker",
+            age: 26,
+            cgpa: 3.86,
+            lang: ["Bengali", "English", "African"]
         
+        console.log(student2.lang);
+        } */
+
+        function Student(name, age, cgpa, id){
+            this.name = name;
+            this.age = age;
+            this.cgpa = cgpa;
+            this.id = id;
+
+            this.display = function(){
+                console.log(this.name);
+                console.log(this.age);
+                console.log(this.cgpa);
+                console.log(this.id);
+            }
+        }
+
+        var student1 = new Student("Arman Shahriar", 23, 4.44, 17170914);
+        var student2 = new Student("Abdul Kader", 22, 4.35, 17170916);
+        var student3 = new Student("Abu Bokker", 27, 3.86, 17170823);
+        
+        student1.display();
+        student2.display();
+        student3.display();
+
+
+
+
     </script>
 </body>
 </html>
